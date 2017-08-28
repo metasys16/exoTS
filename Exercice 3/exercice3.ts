@@ -18,7 +18,7 @@ class Personne{
   }
 
   sePresenter(nom: string, prenom: string): void{
-    console.log(`Bonjour je m'appele ${nom} ${prenom}.`)
+    console.log(`Bonjour je m'appele ${this.nom} ${this.prenom}.`)
   }
 }
 
@@ -37,4 +37,7 @@ enum Cursus{Concepteur,Rh,Commerce}
 class Etudiant extends Personne{
   cursus: Cursus;
 
+  constructor(nom: string, prenom: string, cursus: Cursus){
+    super(nom, prenom);
+  }
 }
