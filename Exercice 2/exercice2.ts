@@ -13,27 +13,29 @@ function addition(x: number, y: number): number {
     return x + y;
 }
 
-function sePresenter(nom: string, prenom:string) :void{
-  `Bonjour je m'appele {nom} {mickael}.`
+function sePresenter(nom: string, prenom: string): void{
+  console.log(`Bonjour je m'appele ${nom} ${prenom}.`)
 }
 
-function creerPersonnage(nom: string, prenom:string) :string{
+function creerPersonnage(nom: string, prenom: string): string{
   return nom + " " + prenom;
 }
 
-function supADix(number :number) :boolean{
+function supADix(number: number): boolean{
   if(number > 10){
     return true;
   }
   return false;
 }
 
-function compteurTab(number:number[]){
+function compteurTab(number: number[]){
   for(var i = 0;i<number.length;i++) {
     console.log(number[i]);
   }
 }
 
-function directions(Up,Down,Left,Right){
-  console.log(directions)
+enum Direction{Up,Down,Left,Right};
+
+function deplacer(dir: Direction): void{
+  console.log("Nous allons vers :" + dir);
 }
