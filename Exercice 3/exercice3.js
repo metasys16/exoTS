@@ -7,21 +7,16 @@ message dans la console.
 Vérifier la bonne compilation de vote code, inspecter le code produit et
 soumettre le résultat sur votre dépot github
 */
-
-class Personne{
-  nom: string;
-  prenom: string;
-
-  constructor(nom: string, prenom: string){
-    this.nom = nom;
-    this.prenom = prenom;
-  }
-
-  sePresenter(nom: string, prenom: string): void{
-    console.log(`Bonjour je m'appele ${nom} ${prenom}.`)
-  }
-}
-
+var Personne = /** @class */ (function () {
+    function Personne(nom, prenom) {
+        this.nom = nom;
+        this.prenom = prenom;
+    }
+    Personne.prototype.sePresenter = function (nom, prenom) {
+        console.log("Bonjour je m'appele " + nom + " " + prenom + ".");
+    };
+    return Personne;
+}());
 /*
 Partie 2
 Créer une classe étudiant, héritant de la classe personne
@@ -33,5 +28,4 @@ soumettre le résultat sur votre dépot github
 
 */
 //enum ...
-
 //class Etudiant
