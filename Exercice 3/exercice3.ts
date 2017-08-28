@@ -32,6 +32,9 @@ Vérifier la bonne compilation de vote code, inspecter le code produit et
 soumettre le résultat sur votre dépot github
 
 */
-//enum ...
+enum Cursus{Concepteur,Rh,Commerce}
 
-//class Etudiant
+class Etudiant extends Personne{
+  cursus: Cursus;
+
+}
