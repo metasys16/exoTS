@@ -8,3 +8,32 @@ mais tous les types doivent être présent au moins une fois dans vos fonctions
 Vérifier la bonne compilation de vote code, inspecter le code produit et
 soumettre le résultat sur votre dépot github
 */
+
+function addition(x: number, y: number): number {
+    return x + y;
+}
+
+function sePresenter(nom: string, prenom:string) :void{
+  `Bonjour je m'appele {nom} {mickael}.`
+}
+
+function creerPersonnage(nom: string, prenom:string) :string{
+  return nom + " " + prenom;
+}
+
+function supADix(number :number) :boolean{
+  if(number > 10){
+    return true;
+  }
+  return false;
+}
+
+function compteurTab(number:number[]){
+  for(var i = 0;i<number.length;i++) {
+    console.log(number[i]);
+  }
+}
+
+function directions(Up,Down,Left,Right){
+  console.log(directions)
+}
